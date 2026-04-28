@@ -1,0 +1,304 @@
+{
+    "Title": "Galactic Ranger",
+    "Credits": "Created by Ivan Argueta (eiarguet@ucsc.edu).",
+    "InitialLocation": "Init",
+
+    "Locations": {
+        "Init": {
+            "Body": "Sir we need you at the bridge of the ship!",
+            "Choices": [
+                {
+                    "Text": "Go to the Bridge",
+                    "Target": "Ship Bridge"
+                }
+            ]
+        },
+        "Ship Bridge": {
+            "Body": "We have received at signal from the the planet Omicron Persei 8. Someone named Lrrr wants to speak to a Galactic ranger at their capital building. You must go.",
+            "Choices": [
+                {
+                    "Text": "Go to Omicron Persei 8 Capital Building",
+                    "Target": "Capital Building"
+                }
+            ]
+        },
+        "Capital Building": {
+            "Body": "Greetings! My name is Lrrr and this is my wife Ndnd, We are so glad some one has come to out help!",
+
+            "Choices": [
+                {
+                    "Text": "Ask what they want",
+                    "Target": "What do they want"
+                }
+            ]
+        },
+        "What do they want": {
+            "Body": "Ah yes, see we need some supplies for our children. My wife Ndnd is nesting and out species must stay together at all times while nesting, we were hoping you could help us with this! :)",
+
+            "Choices": [
+                {
+                    "Text": "Help",
+                    "Target": "Help"
+                }
+            ]
+        },
+        "Help": {
+            "Body": "Talk to my wife Ndnd, and she will give you a list for what we need",
+
+            "Choices": [
+                {
+                    "Text": "Talk to Ndnd for list",
+                    "Target": "Ndnd list"
+                }
+            ]
+        },
+        "Ndnd list": {
+            "Body": "We need a couple of items for my children. One is Great Mullen for when our kids get sick and other is Electrical Components to make ipads for them. You will need to go to Buried City and Blue Gate for these items",
+
+            "Choices": [
+                {
+                    "Text": "Go to Buried City",
+                    "Target": "Buried City"
+                },
+                {
+                    "Text": "Go to Blue Gate",
+                    "Target": "Blue Gate"
+                }
+            ]
+        },
+
+        "Buried City": {
+            "Body": "This place is so crummy. I wonder what happened to it, theres no one here, and the houses are all messed up. Where should I go?",
+            "Choices": [
+                {
+                    "Text": "North",
+                    "Target": "Buried City North"
+                },
+                {
+                    "Text": "South",
+                    "Target": "Buried City South"
+                },
+                {
+                    "Text": "East",
+                    "Target": "Buried City East"
+                },
+                {
+                    "Text": "West",
+                    "Target": "Buried City West"
+                },
+                {
+                    "Text": "Go to Blue Gate",
+                    "Target": "Blue Gate"
+                }
+            ]
+        },
+
+        "Buried City North": {
+            "Body": " You see arc \"invasion robots\". If destroyed they could be used as electrical components",
+            "Choices": [
+                {
+                    "Text": "Fight them?",
+                    "Target":"Fight arc"
+                },
+                {
+                    "Text": "Leave them",
+                    "Target": "Leave them"
+                }
+            ]
+        },
+
+        "Fight arc": {
+            "Body": "These Arc put up a greater fight then you thought. You die, Shame for the federation.",
+            "Choices": [
+                {
+                    "Text": "Restart",
+                    "Action": "Restart"
+                }
+            ]
+        },
+        "Leave them": {
+            "Body": "Fighting is way out of my pay grade. Am i even getting paid for this?",
+            "Choices": [
+                {
+                    "Text": "South",
+                    "Target": "Buried City South"
+                },
+                {
+                    "Text": "East",
+                    "Target": "Buried City East"
+                },
+                {
+                    "Text": "West",
+                    "Target": "Buried City West"
+                },
+                {
+                    "Text": "Go to Blue Gate",
+                    "Target": "Blue Gate"
+                }
+            ]
+        },
+        "Buried City South": {
+            "Body": "I've collect more than enough Great Mullen for Lrrr and Ndnd for the next 2 generations",
+            "Choices": [
+                {
+                    "Text": "North",
+                    "Target": "Buried City North"
+                },
+                {
+                    "Text": "East",
+                    "Target": "Buried City East"
+                },
+                {
+                    "Text": "West",
+                    "Target": "Buried City West"
+                },
+                {
+                    "Text": "Go to Blue Gate",
+                    "Target": "Blue Gate"
+                }
+            ]
+        },
+        "Buried City West": {
+            "Body": "There's this beeping sound? It seems to be coming from an old radio of some sort.",
+            "Choices": [
+                {
+                    "Text": "Press Radio button",
+                    "Target": "Radio Button"
+                },
+                {
+                    "Text": "North",
+                    "Target": "Buried City North"
+                },
+                {
+                    "Text": "East",
+                    "Target": "Buried City East"
+                },
+                {
+                    "Text": "West",
+                    "Target": "Buried City West"
+                },
+                {
+                    "Text": "Go to Blue Gate",
+                    "Target": "Blue Gate"
+                }
+            ]
+        },
+
+        "AfterBunkerKeyPickup": {
+            "Body": "There's this beeping sound? It seems to be coming from an old radio of some sort.",
+            "Choices": [
+                {
+                    "Text": "Press Radio button",
+                    "Target": "Radio Button"
+                },
+                {
+                    "Text": "North",
+                    "Target": "Buried City North"
+                },
+                {
+                    "Text": "East",
+                    "Target": "Buried City East"
+                },
+                {
+                    "Text": "West",
+                    "Target": "Buried City West"
+                },
+                {
+                    "Text": "Go to Blue Gate",
+                    "Target": "Blue Gate"
+                }
+            ]
+        },
+
+
+        "Blue Gate": {
+            "Body": "There's not much here, a warehouse and an abandoned village",
+
+            "Choices": [
+                {
+                    "Text": "Head to Village",
+                    "Target": "Blue Gate Village"
+                },
+                {
+                    "Text": "Head to Warehouse",
+                    "Target": "Blue Gate Warehouse"
+                },
+                 {
+                    "Text": "Go to Buried City",
+                    "Target": "Buried City"
+                }
+            ]
+        },
+
+        "Blue Gate Village": {
+            "Body":  "This is perfect I have all the electrical components I need",
+            
+            "Choices": [
+                {
+                    "Text": "Head to Warehouse",
+                    "Target": "Blue Gate Warehouse"
+                },
+                {
+                    "Text": "Go to Buried City",
+                    "Target": "Buried City"
+                }
+            ]
+        },
+
+        "Picked up weapons": {
+            "Body": "Now I can take the fight to Lrrr and Ndnd",
+
+             
+            "Choices": [
+                {
+                    "Text": "Go to Lrrr and Ndnd",
+                    "Target": "Go to Lrrr and Ndnd"
+                }
+            ]
+        },
+
+        "Go to Lrrr and Ndnd": {
+            "Body": "You have hired me and previous people to be used as food. Now you must pay",
+
+            "Choices": [
+                {
+                    "Text": "Lrrr - Wait we can EXPLAIN",
+                    "Target": "Explain"
+                }
+            ]
+        },
+
+        "Explain": {
+            "Body": "We needed to do this. We ouldnt have left our kids and we need sustenance from REAL meat, you understand?",
+            "Choices": [
+                {
+                    "Text": "Deal with them",
+                    "Target": "Deal with them"
+                },
+                {
+                    "Text": "Arrest them",
+                    "Target": "Arrest them"
+                }
+            ]
+        },
+
+        "Deal with them": {
+            "Body": "There terror will not affect another soul again"
+        },
+
+        "Arrest them": {
+            "Body": "You are under arrest and must come with me back to base or ELSE",
+
+            "Choices": [
+                {
+                    "Text": "Back to base",
+                    "Target": "Back to base"
+                }
+            ]
+        },
+
+        "Back to base": {
+            "Body": "Thank you Ranger! Lrrr and Ndnd have been on the run for yours. Your prize is an A++++-+ in this assignment!"
+        }
+    }
+}
