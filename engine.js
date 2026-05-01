@@ -58,7 +58,8 @@ class Engine {
         this.output.appendChild(div);
     }
 
-    // Function used to set up status bar at the top of header
+    // Function used to set up the status bar at the top of the header
+    // This was from ChatGPT
     updateStatusBar() {
         this.statusBar.innerHTML = `<strong>Inventory:</strong>
         Bunker Key: ${this.state.hasBunkerKey ? "Collected" : "Not collected"} |
@@ -66,6 +67,7 @@ class Engine {
         Weapons: ${this.state.hasWeapons ? "Collected" : "Not Collected"}
         <hr>`;
     }
+    // End of ChatGPT
 
     // Functions used to collect the keys and set bool to true
     collectBunkerKey() {
@@ -89,8 +91,10 @@ class Engine {
             hasWeapons: false
         }
 
+        // This was ChatGPT
         while (this.output.firstChild) {
         this.output.removeChild(this.output.firstChild);
+        // End ChatGPT
     }
 
     while (this.actionsContainer.firstChild) {
